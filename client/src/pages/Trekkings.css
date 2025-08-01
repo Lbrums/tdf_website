@@ -1,0 +1,182 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.Trkg-header {
+    background-image: url('../assets/Trekkings.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 45vh;
+    /* ajuste conforme desejado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Trkg-header-content {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.Trkg-header-content h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0.1rem;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    /* Cria a "borda" preta */
+
+}
+
+.Trkg-header-content p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 0.5rem;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    /* Cria a "borda" preta */
+}
+
+.Trkg-aventuras {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px;
+    margin: 2rem 0 4rem 0;
+    max-width: 100vw;
+}
+
+.aventura-direita,
+.aventura-esquerda {
+    margin-top: 10px;
+}
+
+.aventura-esquerda {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.aventura-direita {
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.aventura-imagem {
+    width: 35vw;
+    height: 45vh;
+    min-height: fit-content;
+    border: none;
+    border-radius: 8px;
+}
+
+.aventura-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.aventura-info {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aventura-info h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.aventura-info p {
+    color: #333333;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.35;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.aventura-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.aventura-contato button {
+    background-color: black;
+    color: white;
+    padding: 0.75vw 1.5vw;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.aventura-contato p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 700;
+    padding: 0.75vw 1.5vw;
+    border-radius: 8px;
+    background-color: white;
+    margin: 0;
+}
+
+@media (max-width: 1320px) {
+    .Trkg-aventuras {
+        padding: 100px;
+    }
+}
+
+@media (max-width: 920px) {
+    .Trkg-aventuras {
+        padding: 10px;
+    }
+
+    .aventura-esquerda,
+    .aventura-direita {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aventura-imagem {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .aventura-info {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}

@@ -1,19 +1,14 @@
 .header {
-  overflow: visible;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cecbbc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 200px;
+  padding: 0px 200px;
   z-index: 1;
-}
-
-@media (max-width: 920px) {
-  .header {
-    padding: 10px 20px;
-  }
-
+  box-sizing: border-box;
 }
 
 .header-left .logo {
@@ -103,4 +98,11 @@
   .account-button {
     display: none;
   }
+}
+
+@media (max-width: 920px) {
+  .header {
+    padding: 0px 20px;
+  }
+
 }
